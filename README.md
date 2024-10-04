@@ -68,12 +68,12 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_aws_environment"></a> [aws\_environment](#input\_aws\_environment) | Ambiente da AWS | `string` | n/a | yes |
-| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Região da AWS | `string` | n/a | yes |
-| <a name="input_opsgenie_api_key"></a> [opsgenie\_api\_key](#input\_opsgenie\_api\_key) | API Key do OpsGenie | `string` | n/a | yes |
-| <a name="input_opsgenie_team_description"></a> [opsgenie\_team\_description](#input\_opsgenie\_team\_description) | Descrição do Time do OpsGenie | `string` | n/a | yes |
-| <a name="input_opsgenie_team_name"></a> [opsgenie\_team\_name](#input\_opsgenie\_team\_name) | Nome do Time do OpsGenie | `string` | n/a | yes |
-| <a name="input_opsgenie_users"></a> [opsgenie\_users](#input\_opsgenie\_users) | Lista de usuários do OpsGenie | `list(map(string))` | n/a | yes |
+| <a name="input_aws_environment"></a> [aws\_environment](#input\_aws\_environment) | Environment of AWS | `string` | n/a | yes |
+| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Region of AWS | `string` | n/a | yes |
+| <a name="input_opsgenie_api_key"></a> [opsgenie\_api\_key](#input\_opsgenie\_api\_key) | API Key of Opsgenie | `string` | n/a | yes |
+| <a name="input_opsgenie_team_description"></a> [opsgenie\_team\_description](#input\_opsgenie\_team\_description) | Team description of Opsgenie | `string` | n/a | yes |
+| <a name="input_opsgenie_team_name"></a> [opsgenie\_team\_name](#input\_opsgenie\_team\_name) | Team name of Opsgenie | `string` | n/a | yes |
+| <a name="input_opsgenie_users"></a> [opsgenie\_users](#input\_opsgenie\_users) | Opsgenie list users and roles | `list(map(string))` | n/a | yes |
 
 ## Outputs
 
@@ -81,8 +81,8 @@ No modules.
 |------|-------------|
 | <a name="output_aws_account_id"></a> [aws\_account\_id](#output\_aws\_account\_id) | Selected AWS Account ID |
 | <a name="output_aws_region"></a> [aws\_region](#output\_aws\_region) | Details about selected AWS region |
-| <a name="output_opsgenie_security_hub_role_arn"></a> [opsgenie\_security\_hub\_role\_arn](#output\_opsgenie\_security\_hub\_role\_arn) | n/a |
-| <a name="output_opsgenie_security_hub_role_name"></a> [opsgenie\_security\_hub\_role\_name](#output\_opsgenie\_security\_hub\_role\_name) | n/a |
+| <a name="output_opsgenie_security_hub_role_arn"></a> [opsgenie\_security\_hub\_role\_arn](#output\_opsgenie\_security\_hub\_role\_arn) | ARN of the IAM Role created for Opsgenie Security Hub Integration |
+| <a name="output_opsgenie_security_hub_role_name"></a> [opsgenie\_security\_hub\_role\_name](#output\_opsgenie\_security\_hub\_role\_name) | Name of the IAM Role created for Opsgenie Security Hub Integration |
 
 ## Extras
 

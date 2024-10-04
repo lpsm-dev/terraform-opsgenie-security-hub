@@ -17,9 +17,11 @@ output "aws_region" {
 # ==================================================================
 
 output "opsgenie_security_hub_role_name" {
-  value = aws_iam_role.this.name
+  description = "Name of the IAM Role created for Opsgenie Security Hub Integration"
+  value       = aws_iam_role.this.name
 }
 
 output "opsgenie_security_hub_role_arn" {
-  value = aws_iam_role.this.arn
+  description = "ARN of the IAM Role created for Opsgenie Security Hub Integration"
+  value       = aws_iam_role.this.arn
 }

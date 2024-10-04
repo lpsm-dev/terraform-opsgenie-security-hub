@@ -3,12 +3,12 @@
 # ==================================================================
 
 variable "aws_environment" {
-  description = "Ambiente da AWS"
+  description = "Environment of AWS"
   type        = string
 }
 
 variable "aws_region" {
-  description = "Região da AWS"
+  description = "Region of AWS"
   type        = string
 }
 
@@ -17,21 +17,21 @@ variable "aws_region" {
 # ==================================================================
 
 variable "opsgenie_api_key" {
-  description = "API Key do OpsGenie"
+  description = "API Key of Opsgenie"
   type        = string
 }
 
 variable "opsgenie_team_name" {
-  description = "Nome do Time do OpsGenie"
+  description = "Team name of Opsgenie"
   type        = string
 }
 
 variable "opsgenie_team_description" {
-  description = "Descrição do Time do OpsGenie"
+  description = "Team description of Opsgenie"
   type        = string
 }
 
 variable "opsgenie_users" {
-  description = "Lista de usuários do OpsGenie"
+  description = "Opsgenie list users and roles"
   type        = list(map(string))
 }
