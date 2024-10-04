@@ -45,6 +45,10 @@ output:
     
     O AWS SNS é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens. No contexto desta integração, o SNS será usado para enviar notificações do Security Hub para o Opsgenie.
 
+    <div align="center">
+    <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
+    </div>
+
     **Fluxo 1:**
 
     Time de segurança manualmente triggando uma custom action no Security Hub para que os findings sejam enviados para o Opsgenie e um alerta seja aberto.
