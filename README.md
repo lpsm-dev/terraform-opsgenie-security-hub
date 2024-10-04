@@ -62,7 +62,7 @@ No modules.
 | <a name="output_opsgenie_security_hub_role_arn"></a> [opsgenie\_security\_hub\_role\_arn](#output\_opsgenie\_security\_hub\_role\_arn) | n/a |
 | <a name="output_opsgenie_security_hub_role_name"></a> [opsgenie\_security\_hub\_role\_name](#output\_opsgenie\_security\_hub\_role\_name) | n/a |
 
-## Extra 
+## Extras
 
 ### Opsgenie Integration
 
