@@ -56,5 +56,5 @@ EOF
 resource "aws_sns_topic_subscription" "this" {
   topic_arn = aws_sns_topic.this.arn
   protocol  = "https"
-  endpoint  = "https://api.opsgenie.com/v1/json/integrations/webhooks/amazonsecurityhub?apiKey=${opsgenie_api_integration.aws_security_hub.api_key}"
+  endpoint  = local.opsgenie_api_endpoint_security_hub
 }

@@ -11,12 +11,7 @@ resource "aws_iam_role" "this" {
       {
         Effect = "Allow"
         Principal = {
-          AWS = [
-            "arn:aws:iam::089311581210:role/opsgenie-securityhub-app",
-            "arn:aws:iam::401089113854:role/opsgenie-securityhub-app",
-            "arn:aws:iam::838921230308:role/opsgenie-securityhub-app",
-            "arn:aws:iam::028860521379:role/opsgenie-securityhub-app"
-          ]
+          AWS = local.opsgenie_aws_accounts_roles
         }
         Action = "sts:AssumeRole"
         Condition = {
