@@ -23,6 +23,10 @@ O AWS EventBridge é um serviço de integração de eventos. Ele permite que voc
 
 O AWS SNS é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens. No contexto desta integração, o SNS será usado para enviar notificações do Security Hub para o Opsgenie.
 
+<div align="center">
+<img alt="architecture-1" src=".github/assets/architecture-1.png"/>
+</div>
+
 ## Requirements
 
 | Name | Version |
