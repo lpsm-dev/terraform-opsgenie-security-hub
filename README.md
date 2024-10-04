@@ -112,6 +112,8 @@ Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região
 <img alt="step-3" src=".github/assets/step-3.png"/>
 </div>
 
+Ao final desse processo você estará apto para receber os alertas do Security Hub no Opsgenie.
+
 ---
 
 <div align="center">
