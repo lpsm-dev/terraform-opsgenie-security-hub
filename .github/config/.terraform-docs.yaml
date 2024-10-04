@@ -23,11 +23,29 @@ output:
     <!-- BEGIN_TF_DOCS -->
     <a name="readme-top"></a>
 
+    <div align="center">
+
+    <a name="readme-top"></a>
+
+    <img alt="gif-header" src="https://github.com/lpsm-dev/lpsm-dev/blob/c887e9fbb2e72d3857d6191296c35e8b4bc637b3/.github/assets/cloud.gif" width="225"/>
+
+    **Terraform Opsgenie Security Hub**
+
+    [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
+    [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
+    [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
+
+    **Projeto Terraform para a integração do Opsgenie com o Amazon Security Hub**
+
+    </div>
+
+    ---
+
     {{ .Content }}
 
     ## Extras
     
-    ### Opsgenie Integration
+    Após a execução do projeto, você terá que finalizar a configuração do Opsgenie. Para isso, siga os passos abaixo:
 
     **Step 1:**
 
