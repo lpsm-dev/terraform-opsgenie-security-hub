@@ -15,6 +15,8 @@
 
 </div>
 
+Nesse módulo, você irá configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/).
+
 ## Requirements
 
 | Name | Version |
