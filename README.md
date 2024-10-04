@@ -1,3 +1,6 @@
+<!-- BEGIN_TF_DOCS -->
+<a name="readme-top"></a>
+
 ## Requirements
 
 | Name | Version |
@@ -58,3 +61,31 @@ No modules.
 | <a name="output_aws_region"></a> [aws\_region](#output\_aws\_region) | Details about selected AWS region |
 | <a name="output_opsgenie_security_hub_role_arn"></a> [opsgenie\_security\_hub\_role\_arn](#output\_opsgenie\_security\_hub\_role\_arn) | n/a |
 | <a name="output_opsgenie_security_hub_role_name"></a> [opsgenie\_security\_hub\_role\_name](#output\_opsgenie\_security\_hub\_role\_name) | n/a |
+
+## Extra 
+
+### Opsgenie Integration
+
+<div align="center">
+<img alt="step-1" src=".github/assets/step-1.png"/>
+<img alt="step-2" src=".github/assets/step-2.png"/>
+<img alt="step-3" src=".github/assets/step-3.png"/>
+</div>
+
+## Show your support
+
+<div align="center">
+
+Dê uma ⭐️ para esse projeto se ele te ajudou!
+
+<img alt="gif-footer" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/yoda.gif" width="225"/>
+
+<br>
+<br>
+
+Feito com 💜 por [mim](https://github.com/lpsm-dev) :wave: inspirado no [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- END_TF_DOCS -->

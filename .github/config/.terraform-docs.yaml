@@ -1,0 +1,77 @@
+formatter: "markdown"
+
+version: ""
+
+header-from: main.tf
+footer-from: ""
+
+recursive:
+  enabled: false
+  path: modules
+  include-main: true
+
+sections:
+  hide: []
+  show: []
+
+content: ""
+
+output:
+  file: "README.md"
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    <a name="readme-top"></a>
+
+    {{ .Content }}
+
+    ## Extra 
+    
+    ### Opsgenie Integration
+
+    <div align="center">
+    <img alt="step-1" src=".github/assets/step-1.png"/>
+    <img alt="step-2" src=".github/assets/step-2.png"/>
+    <img alt="step-3" src=".github/assets/step-3.png"/>
+    </div>
+
+    ## Show your support
+
+    <div align="center">
+
+    Dê uma ⭐️ para esse projeto se ele te ajudou!
+
+    <img alt="gif-footer" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/yoda.gif" width="225"/>
+
+    <br>
+    <br>
+
+    Feito com 💜 por [mim](https://github.com/lpsm-dev) :wave: inspirado no [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+
+    </div>
+
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <!-- END_TF_DOCS -->
+
+output-values:
+  enabled: false
+  from: ""
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  hide-empty: false
+  html: true
+  indent: 2
+  lockfile: true
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true
