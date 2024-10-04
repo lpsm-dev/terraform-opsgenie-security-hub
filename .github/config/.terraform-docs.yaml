@@ -35,7 +35,7 @@ output:
     [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
     [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-    Nesse módulo, iremos configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/).
+    Nesse módulo, iremos configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber findings do [AWS Security Hub](https://aws.amazon.com/security-hub/).
     
     </div>
 
@@ -60,6 +60,8 @@ output:
     {{ .Content }}
 
     ## Extras
+    
+    ### Opsgenie Integration
     
     Após a execução do projeto, você terá que finalizar a configuração do Opsgenie. Para isso, siga os passos abaixo:
 
@@ -89,6 +91,36 @@ output:
 
     Ao final desse processo você estará apto para receber os alertas do Security Hub no Opsgenie.
 
+    ### Opsgenie Alerts Rules
+
+    Para customizar as mensagens dos alerts do Opsgenie, você deverá editar a regra de "Incoming" da sua integração, nesse caso, da Integração com o Security Hub.
+
+    <div align="center">
+    <img alt="alert-rule" src=".github/assets/alert-rule.png"/>
+    </div>
+
+    No Opsgenie, você pode criar regras de alerta com lógicas condicionais personalizadas. Por exemplo:
+
+    - Definir ações específicas para alertas CRITICAL
+    - Definir ações específicas para alertas HIGH
+
+    Cada regra de alerta permite personalizar vários elementos:
+
+    - Mensagem
+    - Prioridade
+    - Tags
+    - Alias
+    - Descrição
+    - Entidade
+    - Notas
+
+    Para tornar seus alertas mais informativos e relevantes, o Opsgenie utiliza o conceito chamado [Dynamic fields](https://support.atlassian.com/opsgenie/docs/dynamic-fields-in-opsgenie-integrations/). Esses campos são usados para:
+
+    - Personalizar propriedades de alerta
+    - Ajustar condições de alerta com base em informações atualizadas
+
+    Usando campos dinâmicos, você pode criar alertas que se adaptam automaticamente às mudanças em seu ambiente, fornecendo informações mais precisas e úteis para sua equipe.
+    
     ---
 
     <div align="center">
