@@ -66,9 +66,21 @@ No modules.
 
 ### Opsgenie Integration
 
+**Step 1:**
+
 <div align="center">
 <img alt="step-1" src=".github/assets/step-1.png"/>
+</div>
+
+**Step 2:**
+
+<div align="center">
 <img alt="step-2" src=".github/assets/step-2.png"/>
+</div>
+
+**Step 3:**
+
+<div align="center">
 <img alt="step-3" src=".github/assets/step-3.png"/>
 </div>
 
