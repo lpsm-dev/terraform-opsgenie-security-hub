@@ -90,17 +90,23 @@ Após a execução do projeto, você terá que finalizar a configuração do Ops
 
 **Step 1:**
 
+Acesse sua integração no Opsgenie e clique no botão de "Editar".
+
 <div align="center">
 <img alt="step-1" src=".github/assets/step-1.png"/>
 </div>
 
 **Step 2:**
 
+Selecione a opção de se autenticar com a conta do Amazon Security Hub.
+
 <div align="center">
 <img alt="step-2" src=".github/assets/step-2.png"/>
 </div>
 
 **Step 3:**
+
+Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região do seu Security Hub e clique em "Salvar".
 
 <div align="center">
 <img alt="step-3" src=".github/assets/step-3.png"/>
