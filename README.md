@@ -31,13 +31,17 @@ O [Amazon Security Hub](https://aws.amazon.com/security-hub/) é um serviço que
 
 O [Opsgenie](https://www.atlassian.com/br/software/opsgenie) é um serviço de gerenciamento de alertas que permite que você gerencie, responda e resolva incidentes de TI de forma eficiente. Ele fornece alertas em tempo real e notificações para ajudar a garantir que você esteja ciente de problemas críticos em seu ambiente.
 
-**Fluxo 1:**
+## Fluxo
+
+**Manual Trigger:**
 
 Time de segurança manualmente triggando uma custom action no Security Hub para que os findings sejam enviados para o Opsgenie e um alerta seja aberto.
 
 <div align="center">
 <img alt="architecture-1" src=".github/assets/architecture-1.png"/>
 </div>
+
+**Automatic Trigger:**    
 
 ## Requirements
 
