@@ -63,7 +63,7 @@ output:
     
     ### Opsgenie Integration
     
-    Após a execução do projeto, você terá que finalizar a configuração do Opsgenie. Para isso, siga os passos abaixo:
+    Após a execução do projeto Terraform, você terá que finalizar a configuração do Opsgenie pela interface web. Para isso, siga os passos abaixo:
 
     **Step 1:**
 
@@ -120,7 +120,7 @@ output:
     - Ajustar condições de alerta com base em informações atualizadas
 
     Usando campos dinâmicos, você pode criar alertas que se adaptam automaticamente às mudanças em seu ambiente, fornecendo informações mais precisas e úteis para sua equipe.
-    
+
     ---
 
     <div align="center">

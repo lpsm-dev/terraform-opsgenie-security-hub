@@ -100,7 +100,7 @@ No modules.
 
 ### Opsgenie Integration
 
-Após a execução do projeto, você terá que finalizar a configuração do Opsgenie. Para isso, siga os passos abaixo:
+Após a execução do projeto Terraform, você terá que finalizar a configuração do Opsgenie pela interface web. Para isso, siga os passos abaixo:
 
 **Step 1:**
 
