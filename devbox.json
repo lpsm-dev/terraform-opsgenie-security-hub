@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.1/.schema/devbox.schema.json",
+  "packages": [
+    "awscli2@latest",
+    "direnv@latest",
+    "gitleaks@8.18.4",
+    "go-task@latest",
+    "infracost@latest",
+    "nodePackages.dotenv-cli@latest",
+    "opentofu@latest",
+    "pre-commit@latest",
+    "terraform@latest",
+    "terraform-docs@latest",
+    "tflint@latest",
+    "yamllint@latest"
+  ],
+  "shell": {
+    "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
+    "scripts": {
+      "test": ["echo \"Error: no test specified\" && exit 1"]
+    }
+  }
+}

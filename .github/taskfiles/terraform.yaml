@@ -1,0 +1,34 @@
+---
+version: "3"
+
+tasks:
+  lint:
+    desc: Run TFlint tool
+    cmds:
+      - tflint --init --config={{.ROOT_DIR}}/.github/config/.tflint.hcl
+      - tflint --recursive --config={{.ROOT_DIR}}/.github/config/.tflint.hcl
+
+  fmt:
+    desc: Run Terraform fmt command
+    cmds:
+      - terraform -chdir={{.ROOT_DIR}} fmt -recursive
+
+  sec:
+    desc: Run TFSec tool
+    cmds:
+      - tfsec {{.ROOT_DIR}} --force-all-dirs --exclude-path=*terraform*
+
+  docs:
+    desc: Generate documentation for all Terraform projects
+    cmds:
+      - |
+        original_dir={{.ROOT_DIR}}
+        find $original_dir -type f -name "*.tf" ! -path "*/.terraform/*" -exec dirname {} \; | uniq | while read -r dir; do
+          echo "Running terraform-docs int $dir" && (cd "$dir" && terraform-docs markdown . > README.md)
+        done
+
+  all:
+    desc: Run all Terraform tasks
+    cmds:
+      - task: fmt
+      - task: docs
