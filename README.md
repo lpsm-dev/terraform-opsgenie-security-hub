@@ -13,9 +13,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-</div>
+Nesse módulo, iremos configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/).
 
-Nesse módulo, você irá configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/). Ao receber um finding do Security Hub, o Opsgenie irá criar um alerta para que você possa tomar as devidas providências. 
+</div>
 
 ## Architecture
 
