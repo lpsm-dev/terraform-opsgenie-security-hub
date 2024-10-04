@@ -145,7 +145,7 @@ Ao final desse processo você estará apto para receber os alertas do Security H
 
 ### Opsgenie Alerts Rules
 
-Para customizar as mensagens dos alerts do Opsgenie, você deverá editar a regra de "Incoming" da sua integração, nesse caso, da Integração com o Security Hub.
+Para customizar as mensagens dos alertas do Opsgenie, você deverá editar a regra de "Incoming" da sua integração.
 
 <div align="center">
 <img alt="alert-rule" src=".github/assets/alert-rule.png"/>
