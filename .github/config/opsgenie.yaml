@@ -1,0 +1,88 @@
+---
+types:
+# ================================
+# SETUP OPSGENIE - CRITICAL
+# ================================
+  critical:
+    rule:
+      name: Create Alert - CRITICAL
+      type: Create Alert
+    alert-filters:
+      - name: Only alerts that match any condition
+        conditions:
+          - name: Severity
+            condition: Equals
+            value: CRITICAL
+    alert-properties:
+      alert-message: |
+        Inspector:ECR - {{findings.get(0).extract(/RepositoryName=([^,]+)/)}} - {{title}}
+      priority: P1
+      tags:
+        - aws:account:id={{awsAccountId}}
+        - aws:account:name={{findings.get(0).extract(/AwsAccountName=([^,]+)/)}}
+        - aws:region:id={{region}}
+        - event:type:id={{workflowStatus}}
+        - generator={{generatorId}}
+        - image:name={{findings.get(0).extract(/RepositoryName=([^,]+)/)}}
+        - image:tags={{findings.get(0).substringBetween("ImageTags=[","]")}}
+        - severity={{severity}}
+      alias: |
+        {{findingId}}
+      description: |
+        {{description}}
+
+        Para mais informações entre na conta de security-services e acesse:
+
+        https://{{region}}.console.aws.amazon.com/securityhub/home?region={{region}}#/findings?search=ProductName%3D%255Coperator%255C%253AEQUALS%255C%253AInspector%26ResourceType%3D%255Coperator%255C%253AEQUALS%255C%253AAwsEcrContainerImage%26WorkflowStatus%3D%255Coperator%255C%253AEQUALS%255C%253A{{workflowStatus}}%26WorkflowStatus%3D%255Coperator%255C%253AEQUALS%255C%253ANOTIFIED%26RecordState%3D%255Coperator%255C%253AEQUALS%255C%253AACTIVE%26SeverityLabel%3D%255Coperator%255C%253AEQUALS%255C%253A{{severity}}
+      entity: |
+        {{findings.get(0).extract(/RepositoryName=([^,]+)/)}}
+      details:
+        - generatorId: {{generatorId}}
+        - productArn: {{productArn}}
+        - schemaVersion: {{schemaVersion}}
+        - findingId: {{findingId}}
+# ================================
+# SETUP OPSGENIE - HIGH
+# ================================
+  high:
+    rule:
+      name: Create Alert - HIGH
+      type: Create Alert
+    alert-filters:
+      - name: Only alerts that match any condition
+        conditions:
+          - name: Severity
+            condition: Equals
+            value: High
+    alert-properties:
+      alert-message: |
+        Inspector:ECR - {{findings.get(0).extract(/RepositoryName=([^,]+)/)}} - {{title}}
+      priority: P2
+      tags:
+        - aws:account:id={{awsAccountId}}
+        - aws:account:name={{findings.get(0).extract(/AwsAccountName=([^,]+)/)}}
+        - aws:region:id={{region}}
+        - event:type:id={{workflowStatus}}
+        - generator={{generatorId}}
+        - image:name={{findings.get(0).extract(/RepositoryName=([^,]+)/)}}
+        - image:tags={{findings.get(0).substringBetween("ImageTags=[","]")}}
+        - severity={{severity}}
+      alias: |
+        {{findings.get(0).extract(/RepositoryName=([^,]+)/)}}-{{findings.get(0).substringBetween("ImageTags=[","]")}}
+      description: |
+        {{description}}
+
+        Para mais informações entre na conta de security-services e acesse:
+
+        https://{{region}}.console.aws.amazon.com/securityhub/home?region={{region}}#/findings?search=ProductName%3D%255Coperator%255C%253AEQUALS%255C%253AInspector%26ResourceType%3D%255Coperator%255C%253AEQUALS%255C%253AAwsEcrContainerImage%26WorkflowStatus%3D%255Coperator%255C%253AEQUALS%255C%253A{{workflowStatus}}%26WorkflowStatus%3D%255Coperator%255C%253AEQUALS%255C%253ANOTIFIED%26RecordState%3D%255Coperator%255C%253AEQUALS%255C%253AACTIVE%26SeverityLabel%3D%255Coperator%255C%253AEQUALS%255C%253A{{severity}}
+      entity: |
+        {{findings.get(0).extract(/RepositoryName=([^,]+)/)}}
+      note: |
+        {{title}}
+
+        {{description}}
+      details:
+        - generatorId: {{generatorId}}
+        - productArn: {{productArn}}
+        - schemaVersion: {{schemaVersion}}
+        - findingId: {{findingId}}
