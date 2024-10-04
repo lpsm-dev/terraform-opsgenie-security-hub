@@ -13,11 +13,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-**Projeto Terraform para a integração do Opsgenie com o Amazon Security Hub**
-
 </div>
-
----
 
 ## Requirements
 
