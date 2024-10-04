@@ -33,7 +33,7 @@ O [Opsgenie](https://www.atlassian.com/br/software/opsgenie) é um serviço de g
 
 ## Fluxo
 
-**Manual Trigger:**
+### Manual Trigger
 
 Time de segurança manualmente triggando uma custom action no Security Hub para que os findings sejam enviados para o Opsgenie e um alerta seja aberto.
 
@@ -41,7 +41,9 @@ Time de segurança manualmente triggando uma custom action no Security Hub para 
 <img alt="architecture-1" src=".github/assets/architecture-1.png"/>
 </div>
 
-**Automatic Trigger:**    
+### Automatic Trigger:
+
+O Security Hub detecta um finding e envia um evento para o EventBridge, que faz uma primeira filtragem para validar se o seu evento será enviado para o SNS. Se for, o SNS envia o evento para o Opsgenie, que cria um alerta com base no evento recebido.
 
 <div align="center">
 <img alt="architecture-2" src=".github/assets/architecture-2.png"/>
