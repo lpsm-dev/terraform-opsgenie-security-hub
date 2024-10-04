@@ -15,9 +15,11 @@
 
 </div>
 
-Nesse módulo, você irá configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/). Ao receber um finding do Security Hub, o Opsgenie irá criar um alerta para que você possa tomar as devidas providências. Na AWS, os serviços AWS EventBridge e AWS SNS são utilizados para fazer essa integração.
+Nesse módulo, você irá configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber alertas do [AWS Security Hub](https://aws.amazon.com/security-hub/). Ao receber um finding do Security Hub, o Opsgenie irá criar um alerta para que você possa tomar as devidas providências. 
 
-O AWS EventBridge é um serviço de integração de eventos que facilita a entrega de dados de aplicativos por meio de uma arquitetura de microsserviços. O AWS SNS é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Juntos, esses serviços permitem que você envie eventos do Security Hub para o Opsgenie.
+O AWS EventBridge é um serviço de integração de eventos que facilita a entrega de dados de aplicativos por meio de uma arquitetura de microsserviços. Ele permite que você capture eventos de várias fontes, incluindo serviços da AWS como o Security Hub, e os direcione para diferentes destinos, como o AWS SNS. Com o EventBridge, você pode criar regras que definem quais eventos devem ser capturados e para onde eles devem ser enviados. Nesse caso, você criará uma regra para capturar eventos do Security Hub e os enviar para um tópico do SNS.
+
+O AWS SNS é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens. No contexto desta integração, o SNS será usado para enviar notificações do Security Hub para o Opsgenie.
 
 ## Requirements
 
