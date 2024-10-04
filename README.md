@@ -23,6 +23,8 @@ O [AWS EventBridge](https://aws.amazon.com/pt/eventbridge/) é um serviço de in
 
 O [AWS SNS](https://aws.amazon.com/pt/sns/) é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens.
 
+O [Amazon Security Hub](https://aws.amazon.com/security-hub/) é um serviço que centraliza e automatiza a segurança de múltiplas contas AWS e ajuda a identificar e corrigir problemas de segurança a partir de uma interface única. Ele conecta findings de segurança de outros produtos de segurança da AWS, como Inpsector, Macie e GardDuty.
+
 <div align="center">
 <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
 </div>
