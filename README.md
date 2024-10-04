@@ -43,6 +43,10 @@ Time de segurança manualmente triggando uma custom action no Security Hub para 
 
 **Automatic Trigger:**    
 
+<div align="center">
+<img alt="architecture-2" src=".github/assets/architecture-2.png"/>
+</div>
+
 ## Requirements
 
 | Name | Version |
