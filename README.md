@@ -98,7 +98,7 @@ Após a execução do projeto, você terá que finalizar a configuração do Ops
 <img alt="step-3" src=".github/assets/step-3.png"/>
 </div>
 
-## Show your support
+---
 
 <div align="center">
 
