@@ -41,11 +41,15 @@ output:
 
     ## Architecture
 
-    O desenho macro a arquitetura leva em consideração um setup de [AWS multi-account](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html):
+    Essa arquitetura leva em consideração um setup de [AWS multi-account](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html), onde temos a ideia da conta payer (root), contas de segurança e as outras contas de workloads e processos internos.
 
     <div align="center">
     <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
     </div>
+
+    No final do dia teremos todas essas contas gerando findings de segurança e enviando para o Security Hub. A partir disso, queremos que esses findings sejam enviados para o Opsgenie para que possamos abrir um alerta e tomar as ações necessárias.
+
+    ## Tools
 
     O [AWS EventBridge](https://aws.amazon.com/pt/eventbridge/) é um serviço de integração de eventos. Ele permite que você capture eventos de várias fontes, incluindo serviços da AWS como o Security Hub, e os direcione para diferentes destinos, como o AWS SNS. Com o EventBridge, você pode criar regras que definem quais eventos devem ser capturados e para onde eles devem ser enviados.
     
