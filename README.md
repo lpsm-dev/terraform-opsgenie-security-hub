@@ -169,13 +169,13 @@ Na imagem acima é exemplificado como você pode customizar suas regras de alert
 
 Cada regra de alerta permite personalizar vários elementos, como:
 
-- Mensagem
-- Prioridade
-- Tags
-- Alias
-- Descrição
-- Entidade
-- Notas
+- **Mensagem**
+- **Prioridade**
+- **Tags**
+- **Alias**
+- **Descrição**
+- **Entidade**
+- **Notas**
 
 Ao criar uma regra, você poderar editar esses campos para que o alerta seja mais informativo e relevante para sua equipe.
 
