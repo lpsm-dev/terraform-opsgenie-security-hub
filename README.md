@@ -164,8 +164,8 @@ Para customizar seus alertas, você deverá editar a regra de "Incoming" da sua 
 
 Na imagem acima é exemplificado como você pode customizar suas regras de alerta. Nesse caso, temos:
 
-- Definir mensagem específica para alertas **CRITICAL**
-- Definir mensagem específica para alertas **HIGH**
+- Criar alerta para severidade **CRITICAL**.
+- Criar alerta para severidade **HIGH**.
 
 Cada regra de alerta permite personalizar vários elementos:
 
