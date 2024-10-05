@@ -162,10 +162,10 @@ Para customizar seus alertas, você deverá editar a regra de "Incoming" da sua 
 <img alt="alert-rule" src=".github/assets/alert-rule.png"/>
 </div>
 
-No Opsgenie, você pode criar regras de alerta com lógicas condicionais personalizadas. Por exemplo:
+Uma das possibilidades com isso é a criação de mensagens customizadas de acordo com regras condicionais. Por exemplo:
 
-- Definir ações específicas para alertas CRITICAL
-- Definir ações específicas para alertas HIGH
+- Definir mensagem específica para alertas **CRITICAL**
+- Definir mensagem específica para alertas **HIGH**
 
 Cada regra de alerta permite personalizar vários elementos:
 
