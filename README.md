@@ -13,7 +13,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-Nesse módulo, iremos configurar o [Opsgenie](https://www.atlassian.com/software/opsgenie) para receber findings do [AWS Security Hub](https://aws.amazon.com/security-hub/).
+Nesse projeto, iremos integrar o [Opsgenie](https://www.atlassian.com/software/opsgenie) + [Amazon Security Hub](https://aws.amazon.com/security-hub/) usando [Terraform](https://www.terraform.io/).
 
 </div>
 
