@@ -40,7 +40,7 @@ Com o alerta aberto no Opsgenie, podemos a partir dele integrar com outros servi
 
 ### Manual Trigger
 
-Time de segurança manualmente triggando uma custom action no Security Hub para que os findings sejam enviados para o Opsgenie e um alerta seja aberto.
+Time de segurança manualmente trigga uma custom action na interface web do Amazon Security Hub para que o finding seja enviado para o Opsgenie e um alerta seja aberto.
 
 <div align="center">
 <img alt="architecture-1" src=".github/assets/architecture-1.png"/>
@@ -48,7 +48,7 @@ Time de segurança manualmente triggando uma custom action no Security Hub para 
 
 ### Automatic Trigger:
 
-O Security Hub detecta um finding e envia um evento para o EventBridge, que faz uma primeira filtragem para validar se o seu evento será enviado para o SNS. Se for, o SNS envia o evento para o Opsgenie, que cria um alerta com base no evento recebido.
+O Security Hub detecta um finding e envia um evento para o EventBridge, que faz uma primeira filtragem para validar se o seu evento será enviado para o SNS. Se for, o SNS envia o evento para o Opsgenie, que cria um alerta com base no evento recebido. Agora, o time de segurança acompanha e é escalado automaticamente sempre que uma nova vulnerabilidade for descoberta.
 
 <div align="center">
 <img alt="architecture-2" src=".github/assets/architecture-2.png"/>
