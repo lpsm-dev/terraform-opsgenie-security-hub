@@ -13,11 +13,13 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-Nesse projeto, realizaremos a integração entre o [Opsgenie](https://www.atlassian.com/software/opsgenie) e o [Amazon Security Hub](https://aws.amazon.com/security-hub/) utilizando o [Terraform](https://www.terraform.io/).
+Nesse projeto, realizaremos a integração do [Opsgenie](https://www.atlassian.com/software/opsgenie) e o [Amazon Security Hub](https://aws.amazon.com/security-hub/) utilizando o [Terraform](https://www.terraform.io/).
 
 </div>
 
 ## Architecture
+
+O desenho macro a arquitetura leva em consideração um setup de [AWS multi-account](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html):
 
 <div align="center">
 <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
