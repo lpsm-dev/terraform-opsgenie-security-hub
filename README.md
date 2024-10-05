@@ -1,3 +1,5 @@
+README.md updated successfully
+
 <!-- BEGIN_TF_DOCS -->
 <a name="readme-top"></a>
 
@@ -111,6 +113,7 @@ No modules.
 | <a name="input_opsgenie_team_description"></a> [opsgenie\_team\_description](#input\_opsgenie\_team\_description) | Team description of Opsgenie | `string` | n/a | yes |
 | <a name="input_opsgenie_team_name"></a> [opsgenie\_team\_name](#input\_opsgenie\_team\_name) | Team name of Opsgenie | `string` | n/a | yes |
 | <a name="input_opsgenie_users"></a> [opsgenie\_users](#input\_opsgenie\_users) | Opsgenie list users and roles | `list(map(string))` | n/a | yes |
+| <a name="input_teste"></a> [teste](#input\_teste) | Teste | `any` | n/a | yes |
 
 ## Outputs
 

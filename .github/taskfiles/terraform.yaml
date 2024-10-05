@@ -29,7 +29,7 @@ tasks:
       - |
         original_dir={{.ROOT_DIR}}
         find $original_dir -type f -name "*.tf" ! -path "*/.terraform/*" -exec dirname {} \; | uniq | while read -r dir; do
-          echo "Running terraform-docs int $dir" && (cd "$dir" && terraform-docs --config {{.ROOT_DIR}}/.github/config/.terraform-docs.yaml . > README.md)
+          echo "Running terraform-docs int $dir" && (cd "$dir" && terraform-docs --config {{.ROOT_DIR}}/.github/config/.terraform-docs.yaml .)
         done
 
   all:
