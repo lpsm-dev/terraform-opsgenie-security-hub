@@ -167,7 +167,7 @@ Na imagem acima é exemplificado como você pode customizar suas regras de alert
 - Criar alerta para severidade **CRITICAL**.
 - Criar alerta para severidade **HIGH**.
 
-Cada regra de alerta permite personalizar vários elementos:
+Cada regra de alerta permite personalizar vários elementos, como:
 
 - Mensagem
 - Prioridade
@@ -177,7 +177,9 @@ Cada regra de alerta permite personalizar vários elementos:
 - Entidade
 - Notas
 
-Para tornar seus alertas mais informativos e relevantes, o Opsgenie utiliza o conceito chamado [Dynamic fields](https://support.atlassian.com/opsgenie/docs/dynamic-fields-in-opsgenie-integrations/). Esses campos são usados para:
+Ao criar uma regra, você poderar editar esses campos para que o alerta seja mais informativo e relevante para sua equipe.
+
+Além disso, o Opsgenie utiliza o conceito chamado [Dynamic fields](https://support.atlassian.com/opsgenie/docs/dynamic-fields-in-opsgenie-integrations/). Esses campos são usados para:
 
 - Personalizar propriedades de alerta
 - Ajustar condições de alerta com base em informações atualizadas
