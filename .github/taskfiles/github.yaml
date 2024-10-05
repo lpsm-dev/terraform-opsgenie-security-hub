@@ -1,0 +1,11 @@
+---
+version: "3"
+
+tasks:
+  action:lint:
+    desc: Linting Custom Actions and Reusable Workflows
+    preconditions:
+      - sh: which actionlint
+        msg: kind {{.PATH_ERROR}}
+    cmds:
+      - actionlint

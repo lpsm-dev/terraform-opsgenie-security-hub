@@ -1,6 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.1/.schema/devbox.schema.json",
   "packages": [
+    "act@latest",
+    "actionlint@latest",
     "awscli2@latest",
     "direnv@latest",
     "gitleaks@8.18.4",
