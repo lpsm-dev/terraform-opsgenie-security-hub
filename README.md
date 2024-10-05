@@ -179,7 +179,7 @@ Cada regra de alerta permite personalizar vários elementos, como:
 
 Ao criar uma regra, você poderar editar esses campos para que o alerta seja mais informativo e relevante para sua equipe.
 
-Além disso, o Opsgenie utiliza o conceito chamado [Dynamic fields](https://support.atlassian.com/opsgenie/docs/dynamic-fields-in-opsgenie-integrations/). Esses campos são usados para:
+Além disso, o Opsgenie possui uma feature chamada [Dynamic fields](https://support.atlassian.com/opsgenie/docs/dynamic-fields-in-opsgenie-integrations/). Esses campos são usados para:
 
 - Personalizar propriedades de alerta
 - Ajustar condições de alerta com base em informações atualizadas
