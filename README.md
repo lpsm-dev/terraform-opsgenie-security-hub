@@ -25,7 +25,7 @@ Essa arquitetura leva em consideração um setup de [AWS multi-account](https://
 <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
 </div>
 
-No final do dia teremos todas essas contas gerando findings de segurança e enviando para o Security Hub. A partir disso, queremos que esses findings sejam enviados para o Opsgenie para que possamos abrir um alerta e tomar as ações necessárias.
+No final do dia teremos todas essas contas gerando findings de segurança e enviando para o Security Hub da conta de segurança, que é delegada para administrar os seviços de segurança a partir de um permissionamento feito na conta payer (root). A partir disso, queremos que esses findings sejam enviados para o Opsgenie para que possamos abrir um alerta e tomar as ações necessárias.
 
 ## Tools
 
