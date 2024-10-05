@@ -3,7 +3,7 @@
 # ==================================================================
 
 resource "opsgenie_api_integration" "aws_security_hub" {
-  name                           = "aws-security-hub-findings"
+  name                           = "security-hub-findings"
   type                           = "AmazonSecurityHub"
   enabled                        = true
   allow_write_access             = true
