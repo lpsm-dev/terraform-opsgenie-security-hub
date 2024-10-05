@@ -184,7 +184,7 @@ Além disso, o Opsgenie possui uma feature chamada [Dynamic fields](https://supp
 - Personalizar propriedades (elementos) do alerta.
 - Ajustar condições do alerta com base em informações atualizadas.
 
-Usando Dynamic fields você pode criar alertas que se adaptam automaticamente às mudanças em seu ambiente, fornecendo informações mais precisas e úteis para sua equipe.
+Usando Dynamic fields você pode criar alertas que se adaptam automaticamente às mudanças em seu ambiente.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
