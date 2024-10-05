@@ -146,17 +146,17 @@ Selecione a opção de se autenticar com a conta do Amazon Security Hub.
 
 **Step 3:**
 
-Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região do seu Security Hub e clique em "Salvar".
+Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região do Amazon Security Hub e clique em "Salvar".
 
 <div align="center">
 <img alt="step-3" src=".github/assets/step-3.png"/>
 </div>
 
-Ao final desse processo você estará apto para receber os alertas do Security Hub no Opsgenie.
+Ao final desse processo você estará apto para receber os findings do Security Hub no Opsgenie.
 
 ### Opsgenie Alerts Rules
 
-Para customizar as mensagens dos alertas do Opsgenie, você deverá editar a regra de "Incoming" da sua integração.
+Para customizar seus alertas, você deverá editar a regra de "Incoming" da sua integração.
 
 <div align="center">
 <img alt="alert-rule" src=".github/assets/alert-rule.png"/>
