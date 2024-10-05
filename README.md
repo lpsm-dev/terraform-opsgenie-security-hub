@@ -29,12 +29,16 @@ No final do dia teremos todas essas contas gerando findings de segurança e envi
 
 Com o alerta aberto no Opsgenie, podemos a partir dele integrar com outros serviços, como o [Jira](https://www.atlassian.com/br/software/jira), [Slack](https://slack.com/), [Teams](https://www.microsoft.com/pt-br/microsoft-teams/log-in) e etc.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Tools
 
 - O [AWS EventBridge](https://aws.amazon.com/pt/eventbridge/) é um serviço de integração de eventos. Ele permite que você capture eventos de várias fontes, incluindo serviços da AWS como o Security Hub, e os direcione para diferentes destinos, como o AWS SNS. Com o EventBridge, você pode criar regras que definem quais eventos devem ser capturados e para onde eles devem ser enviados.
 - O [AWS SNS](https://aws.amazon.com/pt/sns/) é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens.
 - O [Amazon Security Hub](https://aws.amazon.com/security-hub/) é um serviço que centraliza e automatiza a segurança de múltiplas contas AWS e ajuda a identificar e corrigir problemas de segurança a partir de uma interface única. Ele conecta findings de segurança de outros produtos de segurança da AWS, como Inpsector, Macie e GardDuty.
 - O [Opsgenie](https://www.atlassian.com/br/software/opsgenie) é um serviço de gerenciamento de alertas que permite que você gerencie, responda e resolva incidentes de TI de forma eficiente. Ele fornece alertas em tempo real e notificações para ajudar a garantir que você esteja ciente de problemas críticos em seu ambiente.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Fluxo
 
@@ -53,6 +57,8 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 <div align="center">
 <img alt="architecture-2" src=".github/assets/architecture-2.png"/>
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Requirements
 
@@ -177,6 +183,26 @@ Para tornar seus alertas mais informativos e relevantes, o Opsgenie utiliza o co
 - Ajustar condições de alerta com base em informações atualizadas
 
 Usando campos dinâmicos, você pode criar alertas que se adaptam automaticamente às mudanças em seu ambiente, fornecendo informações mais precisas e úteis para sua equipe.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Contributing
+
+Gostaria de contribuir? Isso é ótimo! Temos um guia de contribuição para te ajudar. Clique [aqui](CONTRIBUTING.md) para lê-lo.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Versioning
+
+Para verificar o histórico de mudanças do projeto, acesse o arquivo [**CHANGELOG.md**](CHANGELOG.md).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Troubleshooting
+
+Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
