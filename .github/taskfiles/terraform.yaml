@@ -18,6 +18,11 @@ tasks:
     cmds:
       - tfsec {{.ROOT_DIR}} --force-all-dirs --exclude-path=*terraform*
 
+  infracost:
+    desc: Run Infracost tool
+    cmds:
+      - infracost breakdown --path={{.ROOT_DIR}}
+
   docs:
     desc: Generate documentation for all Terraform projects
     cmds:
