@@ -125,7 +125,7 @@ No modules.
 
 ### Opsgenie Integration
 
-> [WARNING]
+> [!WARNING]  
 > Após a execução do projeto Terraform, você terá que finalizar a configuração do Opsgenie pela interface web. Para isso, siga os passos abaixo.
 
 **Step 1:**
@@ -201,8 +201,6 @@ Para verificar o histórico de mudanças do projeto, acesse o arquivo [**CHANGEL
 ## Troubleshooting
 
 Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
