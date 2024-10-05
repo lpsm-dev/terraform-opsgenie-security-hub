@@ -25,3 +25,12 @@ output "opsgenie_security_hub_role_arn" {
   description = "ARN of the IAM Role created for Opsgenie Security Hub Integration"
   value       = aws_iam_role.this.arn
 }
+
+# ==================================================================
+# OUTPUTS - AWS SNS
+# ==================================================================
+
+output "aws_sns_topic_arn" {
+  description = "ARN of the SNS Topic created for Opsgenie Security Hub Integration"
+  value       = aws_sns_topic.this.arn
+}

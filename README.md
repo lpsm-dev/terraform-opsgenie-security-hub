@@ -83,10 +83,12 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_event_rule.security_hub_custom_action_opsgenie](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
-| [aws_cloudwatch_event_rule.security_hub_inspector_findings_ecr](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
-| [aws_cloudwatch_event_target.security_hub_custom_action_opsgenie](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
-| [aws_cloudwatch_event_target.security_hub_inspector_findings_ecr](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
+| [aws_cloudwatch_event_rule.custom_action](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_rule.findings_guardduty](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_rule.findings_inspector_ecr](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_rule.findings_security_standards](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_target.custom_action](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
+| [aws_cloudwatch_event_target.findings_inspector_ecr](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
 | [aws_iam_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
 | [aws_iam_role.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role_policy_attachment.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
@@ -118,6 +120,7 @@ No modules.
 |------|-------------|
 | <a name="output_aws_account_id"></a> [aws\_account\_id](#output\_aws\_account\_id) | Selected AWS Account ID |
 | <a name="output_aws_region"></a> [aws\_region](#output\_aws\_region) | Details about selected AWS region |
+| <a name="output_aws_sns_topic_arn"></a> [aws\_sns\_topic\_arn](#output\_aws\_sns\_topic\_arn) | ARN of the SNS Topic created for Opsgenie Security Hub Integration |
 | <a name="output_opsgenie_security_hub_role_arn"></a> [opsgenie\_security\_hub\_role\_arn](#output\_opsgenie\_security\_hub\_role\_arn) | ARN of the IAM Role created for Opsgenie Security Hub Integration |
 | <a name="output_opsgenie_security_hub_role_name"></a> [opsgenie\_security\_hub\_role\_name](#output\_opsgenie\_security\_hub\_role\_name) | Name of the IAM Role created for Opsgenie Security Hub Integration |
 
