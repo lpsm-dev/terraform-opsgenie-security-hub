@@ -45,13 +45,13 @@ jobs:
         uses: reviewdog/action-yamllint@v1
         if: ${{ github.event_name == 'pull_request' && !contains(github.ref, 'renovate') }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GT_TOKEN }}
           reporter: github-check
           yamllint_flags: "-c .github/config/.yamllint.yaml ."
       - name: Run YAML Lint in Branch
         uses: reviewdog/action-yamllint@v1
         if: ${{ github.event_name != 'pull_request' && !contains(github.ref, 'renovate') }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GT_TOKEN }}
           reporter: github-check
           yamllint_flags: "-c .github/config/.yamllint.yaml ."
