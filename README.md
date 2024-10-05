@@ -162,7 +162,7 @@ Para customizar seus alertas, você deverá editar a regra de "Incoming" da sua 
 <img alt="alert-rule" src=".github/assets/alert-rule.png"/>
 </div>
 
-Uma das possibilidades com isso é a criação de mensagens customizadas de acordo com regras condicionais. Por exemplo:
+Na imagem acima é exemplificado como você pode customizar suas regras de alerta. Nesse caso, temos:
 
 - Definir mensagem específica para alertas **CRITICAL**
 - Definir mensagem específica para alertas **HIGH**
