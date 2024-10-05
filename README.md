@@ -204,8 +204,6 @@ Para verificar o histórico de mudanças do projeto, acesse o arquivo [**CHANGEL
 
 Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/issues).
 
----
-
 <div align="center">
 
 Dê uma ⭐️ para esse projeto se ele te ajudou!
