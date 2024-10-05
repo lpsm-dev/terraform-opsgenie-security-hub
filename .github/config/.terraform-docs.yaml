@@ -88,7 +88,7 @@ output:
     
     ### Opsgenie Integration
     
-    > [WARNING]
+    > [!WARNING]  
     > Após a execução do projeto Terraform, você terá que finalizar a configuração do Opsgenie pela interface web. Para isso, siga os passos abaixo.
 
     **Step 1:**
