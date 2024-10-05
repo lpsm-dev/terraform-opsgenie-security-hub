@@ -109,13 +109,13 @@ output:
 
     **Step 3:**
 
-    Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região do seu Security Hub e clique em "Salvar".
+    Coloque a role criada pelo Terraform no campo de "Role ARN", selecione a região do Amazon Security Hub e clique em "Salvar".
 
     <div align="center">
     <img alt="step-3" src=".github/assets/step-3.png"/>
     </div>
 
-    Ao final desse processo você estará apto para receber os alertas do Security Hub no Opsgenie.
+    Ao final desse processo você estará apto para receber os findings do Security Hub no Opsgenie.
 
     ### Opsgenie Alerts Rules
 
