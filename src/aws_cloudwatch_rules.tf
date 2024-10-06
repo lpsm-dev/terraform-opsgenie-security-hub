@@ -4,7 +4,7 @@
 
 resource "aws_cloudwatch_event_rule" "custom_action" {
   name          = "opsgenie-sh-custom-action"
-  description   = "Rule for creating an alert in Opsgenie based on a Security Hub custom action trigger manually"
+  description   = "Rule to create an alert in Opsgenie based on a Security Hub custom action trigger manually"
   event_pattern = <<EOF
 {
   "source": ["aws.securityhub"],
@@ -60,7 +60,7 @@ resource "aws_cloudwatch_event_rule" "findings_security_standards" {
   "detail-type": ["Security Hub Findings - Imported"],
   "detail": {
     "findings": {
-      "ProductName": "Security Hub",
+      "ProductName": ["Security Hub"],
       "Severity": {
         "Label": ["CRITICAL", "HIGH"]
       },
@@ -74,7 +74,7 @@ EOF
 }
 
 resource "aws_cloudwatch_event_rule" "findings_guardduty" {
-  name          = "opsgenie-findings-guardduty"
+  name          = "opsgenie-sh-findings-guardduty"
   description   = "Rule to create an alert in Opsgenie when GuardDuty generates a finding in Security Hub"
   event_pattern = <<EOF
 {
@@ -82,7 +82,7 @@ resource "aws_cloudwatch_event_rule" "findings_guardduty" {
   "detail-type": ["Security Hub Findings - Imported"],
   "detail": {
     "findings": {
-      "ProductName": "GuardDuty",
+      "ProductName": ["GuardDuty"],
       "Severity": {
         "Label": ["CRITICAL", "HIGH"]
       },

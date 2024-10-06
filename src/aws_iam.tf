@@ -16,7 +16,7 @@ resource "aws_iam_role" "this" {
         Action = "sts:AssumeRole"
         Condition = {
           StringEquals = {
-            "sts:ExternalId" = [opsgenie_api_integration.aws_security_hub.api_key]
+            "sts:ExternalId" = [local.opsgenie_api_endpoint_security_hub]
           }
         }
       }
