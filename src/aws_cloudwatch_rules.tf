@@ -88,7 +88,7 @@ resource "aws_cloudwatch_event_rule" "findings_guardduty" {
       },
       "Workflow": {
         "Status": ["NEW"]
-      },
+      }
     }
   }
 }
