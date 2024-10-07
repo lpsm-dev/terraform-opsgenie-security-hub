@@ -3,8 +3,8 @@
 # ==================================================================
 
 resource "aws_sns_topic" "this" {
-  name            = "opsgenie-security-hub-finding"
-  display_name    = "opsgenie-security-hub-finding"
+  name            = "opsgenie-sh-findings"
+  display_name    = "opsgenie-sh-findings"
   delivery_policy = <<EOF
 {
   "http": {

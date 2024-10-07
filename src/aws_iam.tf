@@ -3,8 +3,8 @@
 # ==================================================================
 
 resource "aws_iam_role" "this" {
-  name        = "opsgenie-security-hub-role"
-  description = "IAM role to allow Opsgenie to access Security Hub"
+  name        = "opsgenie-sh-role"
+  description = "IAM role to allow Opsgenie access the Security Hub"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -29,8 +29,8 @@ resource "aws_iam_role" "this" {
 # ==================================================================
 
 resource "aws_iam_policy" "this" {
-  name        = "opsgenie-security-hub-policy"
-  description = "Policy to allow opsgenie to access security hub"
+  name        = "opsgenie-sh-policy"
+  description = "Policy to allow findinds operations in Security Hub"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
