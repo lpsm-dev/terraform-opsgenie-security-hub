@@ -17,9 +17,7 @@ Integração do [Opsgenie](https://www.atlassian.com/software/opsgenie) + [Amazo
 
 </div>
 
-## Architecture
-
-A arquitetura proposta para essa integração é a seguinte:
+## Arquitetura
 
 <div align="center">
 <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
@@ -31,7 +29,7 @@ Com o alerta aberto no Opsgenie, podemos a partir dele integrar com outros servi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Tools
+## Ferramentas
 
 - O [AWS EventBridge](https://aws.amazon.com/pt/eventbridge/) é um serviço de integração de eventos. Ele permite que você capture eventos de várias fontes, incluindo serviços da AWS como o Security Hub, e os direcione para diferentes destinos, como o AWS SNS. Com o EventBridge, você pode criar regras que definem quais eventos devem ser capturados e para onde eles devem ser enviados.
 - O [AWS SNS](https://aws.amazon.com/pt/sns/) é um serviço de mensagens e notificações que facilita a comunicação entre sistemas distribuídos. Ele permite que você publique mensagens para tópicos e que os assinantes desses tópicos recebam essas mensagens.
