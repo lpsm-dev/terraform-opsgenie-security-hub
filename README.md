@@ -19,7 +19,7 @@ Integração do [Opsgenie](https://www.atlassian.com/software/opsgenie) + [Amazo
 
 ## Architecture
 
-A arquitetura proposta para essa integração é baseada no modelo de [múltiplas contas](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) da AWS.
+A arquitetura proposta para essa integração é a seguinte:
 
 <div align="center">
 <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
