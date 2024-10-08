@@ -18,8 +18,8 @@ locals {
   # AWS TAGS
   # ==================================================================
   aws_default_tags = {
-    metadata_creation_time = local.creation_time
-    metadata_managedby     = "terraform"
+    metadata_creation_time   = local.creation_time
+    metadata_managedby       = "terraform"
   }
   # ==================================================================
   # OPSGENIE
