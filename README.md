@@ -63,7 +63,9 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.70 |
 | <a name="requirement_opsgenie"></a> [opsgenie](#requirement\_opsgenie) | ~> 0.6 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | ~> 0.12 |
 
 ## Providers
 
