@@ -41,13 +41,13 @@ output:
 
     ## Architecture
 
-    Essa arquitetura leva em consideração um setup de [AWS multi-account](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html), onde temos a ideia da conta payer (root), contas de segurança e as outras contas de workloads e processos internos.
+    A arquitetura proposta para essa integração é baseada no modelo de [múltiplas contas](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) da AWS.
 
     <div align="center">
     <img alt="architecture-0" src=".github/assets/architecture-0.png"/>
     </div>
 
-    No final do dia teremos todas essas contas gerando findings de segurança e enviando para o Security Hub da conta de segurança, que é delegada para administrar os seviços de segurança a partir de um permissionamento feito na conta payer (root). A partir disso, queremos que esses findings sejam enviados para o Opsgenie para que possamos abrir um alerta e tomar as ações necessárias.
+    No final do dia, teremos todas essas contas gerando findings de segurança e enviando para o Security Hub da conta de segurança, que é delegada para administrar os seviços de segurança a partir de um permissionamento feito na conta payer (root). A partir disso, queremos que esses findings sejam enviados para o Opsgenie para que possamos abrir um alerta e tomar as ações necessárias.
 
     Com o alerta aberto no Opsgenie, podemos a partir dele integrar com outros serviços, como o [Jira](https://www.atlassian.com/br/software/jira), [Slack](https://slack.com/), [Teams](https://www.microsoft.com/pt-br/microsoft-teams/log-in) e etc.
 
