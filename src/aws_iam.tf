@@ -11,12 +11,12 @@ resource "aws_iam_role" "this" {
       {
         Effect = "Allow"
         Principal = {
-          AWS = local.opsgenie_aws_accounts_roles
+          AWS = local.opsgenie_atlassian_aws_accounts_roles
         }
         Action = "sts:AssumeRole"
         Condition = {
           StringEquals = {
-            "sts:ExternalId" = [local.opsgenie_api_key_inspector]
+            "sts:ExternalId" = values(local.opsgenie_api_keys)
           }
         }
       }
@@ -30,7 +30,7 @@ resource "aws_iam_role" "this" {
 
 resource "aws_iam_policy" "this" {
   name        = "opsgenie-sh-policy"
-  description = "Policy to allow findinds operations in Security Hub"
+  description = "Policy to allow findings operations in Security Hub"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [

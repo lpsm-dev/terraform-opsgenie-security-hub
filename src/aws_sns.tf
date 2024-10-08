@@ -3,8 +3,9 @@
 # ==================================================================
 
 resource "aws_sns_topic" "this" {
-  name            = "opsgenie-sh-findings"
-  display_name    = "opsgenie-sh-findings"
+  for_each        = toset(local.opsgenie_integrations)
+  name            = "opsgenie-integration-${each.key}"
+  display_name    = "Trigger Opsgenie Integration - ${each.key}"
   delivery_policy = <<EOF
 {
   "http": {
@@ -31,22 +32,23 @@ EOF
 # ==================================================================
 
 resource "aws_sns_topic_policy" "this" {
-  arn    = aws_sns_topic.this.arn
-  policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Principal": {
-        "Service": "events.amazonaws.com"
-      },
-      "Action": "sns:Publish",
-      "Resource": "${aws_sns_topic.this.arn}"
-    }
-  ]
-}
-EOF
+  for_each = aws_sns_topic.this
+  arn      = each.value.arn
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Id      = "default"
+    Statement = [
+      {
+        Sid    = "default"
+        Effect = "Allow"
+        Principal = {
+          Service = "events.amazonaws.com"
+        }
+        Action   = "SNS:Publish"
+        Resource = each.value.arn
+      }
+    ]
+  })
 }
 
 # ==================================================================
@@ -54,7 +56,8 @@ EOF
 # ==================================================================
 
 resource "aws_sns_topic_subscription" "this" {
-  topic_arn = aws_sns_topic.this.arn
+  for_each  = local.opsgenie_api_endpoints
+  topic_arn = aws_sns_topic.this[each.key].arn
   protocol  = "https"
-  endpoint  = local.opsgenie_api_endpoint_security_hub
+  endpoint  = each.value
 }

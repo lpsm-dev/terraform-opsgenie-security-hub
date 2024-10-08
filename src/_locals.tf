@@ -24,11 +24,19 @@ locals {
   # ==================================================================
   # OPSGENIE
   # ==================================================================
-  opsgenie_api_key_general           = opsgenie_api_integration.security_hub_general.api_key
-  opsgenie_api_key_inspector         = opsgenie_api_integration.security_hub_inspector.api_key
-  opsgenie_api_key_guardduty         = opsgenie_api_integration.security_hub_guardduty.api_key
-  opsgenie_api_endpoint_security_hub = "https://api.opsgenie.com/v1/json/integrations/webhooks/amazonsecurityhub?apiKey=${local.opsgenie_api_key_inspector}"
-  opsgenie_aws_accounts_roles = [
+  opsgenie_integrations = [
+    "sh-manual-action",
+    "sh-inspector-findings",
+    "sh-standards-findings",
+    "sh-guardduty-findings"
+  ]
+  opsgenie_api_keys = {
+    for k, v in opsgenie_api_integration.this : k => v.api_key
+  }
+  opsgenie_api_endpoints = {
+    for k in local.opsgenie_integrations : k => "https://api.opsgenie.com/v1/json/integrations/webhooks/amazonsecurityhub?apiKey=${opsgenie_api_integration.this[k].api_key}"
+  }
+  opsgenie_atlassian_aws_accounts_roles = [
     "arn:aws:iam::089311581210:role/opsgenie-securityhub-app",
     "arn:aws:iam::401089113854:role/opsgenie-securityhub-app",
     "arn:aws:iam::838921230308:role/opsgenie-securityhub-app",

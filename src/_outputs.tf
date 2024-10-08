@@ -30,7 +30,10 @@ output "opsgenie_security_hub_role_arn" {
 # OUTPUTS - AWS SNS
 # ==================================================================
 
-output "aws_sns_topic_arn" {
-  description = "ARN of the SNS Topic created for Opsgenie Security Hub Integration"
-  value       = aws_sns_topic.this.arn
-}
+/*output "aws_sns_topic_arns" {
+  description = "Map of ARNs of the SNS Topics created for Opsgenie Security Hub Integrations"
+  value = {
+    for idx, name in local.opsgenie_integrations :
+    name => aws_sns_topic.this[idx].arn
+  }
+}*/
