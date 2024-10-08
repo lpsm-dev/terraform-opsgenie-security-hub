@@ -6,8 +6,8 @@ provider "aws" {
   region = var.aws_region
   default_tags {
     tags = {
-      "metadata:creation-time"   = local.aws_default_tags.metadata_creation_time
-      "metadata:managed-by"      = local.aws_default_tags.metadata_managedby
+      "metadata:creation-time" = local.aws_default_tags.metadata_creation_time
+      "metadata:managed-by"    = local.aws_default_tags.metadata_managedby
     }
   }
 }
