@@ -1,5 +1,41 @@
 # Semantic Versioning Changelog
 
+## [1.1.0](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/compare/1.0.0...1.1.0) (2024-10-08)
+
+
+### :sparkles: News
+
+* add rules ([e345bb1](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/e345bb1d409f65d39ced02547a8d1fd867fabdef))
+* add rules ([9fb9ebd](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/9fb9ebdd0c8ed5b1dc0fbb9b6717d430c0eb7b20))
+* add rules ([bf61e5d](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/bf61e5db3a21ea27ab287b5ec00d2c949d0a727b))
+
+
+### :bug: Fix
+
+* default values ([6dfb3ec](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/6dfb3ecdcaf16a54b573523a0de890a6673a5bf3))
+* docs small changes ([879906b](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/879906b117a4b18a6b861e0ee0280aa0bc9c6943))
+* docs small changes ([71edd94](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/71edd94d512841384ead7f2823f9d2a42e3825fe))
+* docs small changes ([a2e37ea](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/a2e37ea2ffda20c1a4382f1079037192d8feb87a))
+* docs small changes ([691bade](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/691badeff018b4254540bf356ce2a71b6e4987bb))
+* empty file ([1c4f821](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/1c4f8216f75ca42f76c1809f864c4dfb988e5f7c))
+* empty file ([2d7e52e](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/2d7e52ed13ef87829eb4d2e03ff6573067c9044f))
+* format files ([b7831ae](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/b7831aeb2e828948e76a38af6b24bd96ee4635ad))
+* format files ([1de161d](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/1de161d90d06a64ae35beef1f13278c8393ad3a9))
+* locals setup ([d733da0](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/d733da0219cc3ecaac75861f3f3df31a0cabd72e))
+* organize code ([8c6cd94](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/8c6cd9422fff4a77e46aba996a52db3ef68a9b59))
+* organize folders ([9215b1e](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/9215b1eb94afc98df3b51990214043734c783ba4))
+* organize folders ([5e34680](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/5e346805c446217ae2909e451ea12895dccb2f52))
+* organize folders ([1ad81d0](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/1ad81d080822f727b6844b5c3b8e61c2c8b226ca))
+* required providers ([0761203](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/0761203fa534ef5a9048b99f1135b83773b0e707))
+* run tf all ([33f0e7b](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/33f0e7b84664177539f90905767939f7bc99c81e))
+* run tf all ([f0437f9](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/f0437f9ef9cdc11f45d7c1533382f286feb9514e))
+* setup names ([c381d77](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/c381d7771ad69d780f337ddfc442f95c162c653c))
+* setup names ([09e6ed2](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/09e6ed216082f534f7145aba032304916e6a1d93))
+* setup names ([ba6ab3d](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/ba6ab3db8591d01c06cbfd470acac27c41d12529))
+* setup names ([cf2d40a](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/cf2d40a30d2a5a8b56077e33f5342bad7373a3b8))
+* setup providers ([4ff09a2](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/4ff09a213785effa9243d339c8b1579da33efbc3))
+* version files ([cc7b11f](https://github.com/lpsm-dev/terraform-opsgenie-security-hub/commit/cc7b11f8927ea3e76b9c644057141784e9049c5d))
+
 ## 1.0.0 (2024-10-05)
 
 
