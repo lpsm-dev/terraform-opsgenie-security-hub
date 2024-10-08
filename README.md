@@ -121,6 +121,8 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 
 ## Extras
 
+Informações adicionais para que você possa configurar e utilizar a integração.
+
 ### Opsgenie Integration
 
 > [!WARNING]  

@@ -85,6 +85,8 @@ output:
     {{ .Content }}
 
     ## Extras
+
+    Informações adicionais para que você possa configurar e utilizar a integração.
     
     ### Opsgenie Integration
     
