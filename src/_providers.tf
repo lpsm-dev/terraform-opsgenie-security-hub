@@ -3,7 +3,7 @@
 # ==================================================================
 
 provider "aws" {
-  region = var.aws_region
+  region = local.aws_region
   default_tags {
     tags = {
       "metadata:creation-time" = local.aws_default_tags.metadata_creation_time
@@ -20,3 +20,9 @@ provider "opsgenie" {
   api_url = "api.eu.opsgenie.com"
   api_key = var.opsgenie_api_key
 }
+
+# ==================================================================
+# PROVIDER OTHERS
+# ==================================================================
+
+provider "time" {}
