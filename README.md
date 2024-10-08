@@ -63,7 +63,7 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8 |
-| <a name="requirement_opsgenie"></a> [opsgenie](#requirement\_opsgenie) | 0.6.37 |
+| <a name="requirement_opsgenie"></a> [opsgenie](#requirement\_opsgenie) | ~> 0.6 |
 
 ## Providers
 
@@ -90,12 +90,12 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 | [aws_sns_topic.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
 | [aws_sns_topic_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_policy) | resource |
 | [aws_sns_topic_subscription.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
-| [opsgenie_api_integration.this](https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration) | resource |
-| [opsgenie_team.this](https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team) | resource |
+| [opsgenie_api_integration.this](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/resources/api_integration) | resource |
+| [opsgenie_team.this](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/resources/team) | resource |
 | [time_static.creation](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
-| [opsgenie_user.users](https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/user) | data source |
+| [opsgenie_user.users](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/data-sources/user) | data source |
 
 ## Inputs
 
