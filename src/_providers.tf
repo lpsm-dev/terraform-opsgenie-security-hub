@@ -3,7 +3,7 @@
 # ==================================================================
 
 provider "aws" {
-  region = local.aws_region
+  region = var.aws_region
   default_tags {
     tags = {
       "metadata:creation-time" = local.aws_default_tags.metadata_creation_time

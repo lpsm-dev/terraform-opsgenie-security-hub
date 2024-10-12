@@ -79,6 +79,7 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_cw_opsgenie_sh_custom_action"></a> [cw\_opsgenie\_sh\_custom\_action](#module\_cw\_opsgenie\_sh\_custom\_action) | terraform-aws-modules/cloudwatch/aws//modules/log-group | ~> 5.6 |
 | <a name="module_eventbridge"></a> [eventbridge](#module\_eventbridge) | terraform-aws-modules/eventbridge/aws | ~> 3.11 |
 
 ## Resources
@@ -93,6 +94,7 @@ O Security Hub detecta um finding e envia um evento para o EventBridge, que faz 
 | [aws_sns_topic_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_policy) | resource |
 | [aws_sns_topic_subscription.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
 | [opsgenie_api_integration.this](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/resources/api_integration) | resource |
+| [opsgenie_escalation.this](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/resources/escalation) | resource |
 | [opsgenie_team.this](https://registry.terraform.io/providers/opsgenie/opsgenie/latest/docs/resources/team) | resource |
 | [time_static.creation](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |

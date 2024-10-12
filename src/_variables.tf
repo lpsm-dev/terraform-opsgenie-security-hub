@@ -1,5 +1,5 @@
 # ==================================================================
-# VARIABLES - AWS
+# VARIABLES - AWS GENERAL
 # ==================================================================
 
 variable "aws_environment" {
@@ -7,7 +7,7 @@ variable "aws_environment" {
   type        = string
   default     = "production"
   validation {
-    condition     = contains(["develop", "stage", "production", "sandbox", "pocs"], var.aws_environment) #
+    condition     = contains(["develop", "stage", "production", "sandbox", "pocs"], var.aws_environment)
     error_message = "Invalid argument \"aws_environment\", please choose one of: (\"develop\",\"stage\",\"production\",\"sandbox\",\"pocs\")."
   }
 }
@@ -17,7 +17,7 @@ variable "aws_region" {
   type        = string
   default     = "us-east-1"
   validation {
-    condition     = contains(["us-east-1", "sa-east-1"], var.aws_region) #
+    condition     = contains(["us-east-1", "sa-east-1"], var.aws_region)
     error_message = "Invalid argument \"aws_region\", please choose one of: (\"us-east-1\",\"sa-east-1\")."
   }
 }

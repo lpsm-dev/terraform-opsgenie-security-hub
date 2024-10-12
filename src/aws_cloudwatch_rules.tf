@@ -37,16 +37,10 @@ module "eventbridge" {
                 "Type" : ["AwsEcrContainerImage"],
                 "Details" : {
                   "AwsEcrContainerImage" : {
-                    "ImageTags" : [{
-                      "prefix" : "latest"
-                      }, {
-                      "suffix" : "latest"
-                    }]
+                    "$or" : [{ "ImageTags" : ["develop-latest"] }, { "ImageTags" : ["unstable-latest"] }]
                   }
                 },
-                "Id" : [{
-                  "wildcard" : "*images*"
-                }]
+                "Id" : [{ "wildcard" : "*common*" }, { "wildcard" : "*images*" }, { "wildcard" : "*models*" }]
               }
             }
           }
@@ -100,6 +94,10 @@ module "eventbridge" {
       {
         name = "sh-manual-action"
         arn  = aws_sns_topic.this["sh-manual-action"].arn
+      },
+      {
+        name = "send-to-cloudwatch-logs"
+        arn  = module.cw_opsgenie_sh_custom_action.cloudwatch_log_group_arn
       }
     ],
     opsgenie-sh-findings-inspector = [

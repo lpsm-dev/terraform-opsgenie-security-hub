@@ -11,4 +11,9 @@ resource "opsgenie_api_integration" "this" {
   ignore_responders_from_payload = false
   suppress_notifications         = false
   owner_team_id                  = opsgenie_team.this.id
+  lifecycle {
+    ignore_changes = [
+      enabled
+    ]
+  }
 }
