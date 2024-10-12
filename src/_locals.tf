@@ -11,7 +11,7 @@ resource "time_static" "creation" {}
 locals {
   creation_time = time_static.creation.rfc3339
   # ==================================================================
-  # AWS GENERAL
+  # AWS DEFAULT
   # ==================================================================
   aws_account_id = data.aws_caller_identity.current.account_id
   # ==================================================================
