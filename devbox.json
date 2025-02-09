@@ -4,7 +4,7 @@
     "act@latest",
     "actionlint@latest",
     "awscli2@latest",
-    "direnv@latest",
+    "direnv@2.35.0",
     "gitleaks@8.18.4",
     "go-task@latest",
     "infracost@latest",
