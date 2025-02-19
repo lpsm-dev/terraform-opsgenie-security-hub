@@ -11,7 +11,7 @@
     "nodePackages.dotenv-cli@latest",
     "opentofu@latest",
     "pre-commit@2.20.0",
-    "terraform@latest",
+    "terraform@0.12.31",
     "terraform-docs@latest",
     "tflint@latest",
     "yamllint@latest"
