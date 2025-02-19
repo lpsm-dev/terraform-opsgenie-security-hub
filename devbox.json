@@ -9,7 +9,7 @@
     "go-task@latest",
     "infracost@latest",
     "nodePackages.dotenv-cli@latest",
-    "opentofu@latest",
+    "opentofu@1.9.0",
     "pre-commit@2.20.0",
     "terraform@latest",
     "terraform-docs@latest",
