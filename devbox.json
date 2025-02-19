@@ -10,7 +10,7 @@
     "infracost@latest",
     "nodePackages.dotenv-cli@latest",
     "opentofu@latest",
-    "pre-commit@latest",
+    "pre-commit@2.20.0",
     "terraform@latest",
     "terraform-docs@latest",
     "tflint@latest",
