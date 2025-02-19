@@ -13,7 +13,7 @@
     "pre-commit@2.20.0",
     "terraform@latest",
     "terraform-docs@latest",
-    "tflint@latest",
+    "tflint@0.55.1",
     "yamllint@latest"
   ],
   "shell": {
