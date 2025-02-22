@@ -7,7 +7,7 @@
     "direnv@latest",
     "gitleaks@8.23.3",
     "go-task@3.41.0",
-    "infracost@latest",
+    "infracost@0.10.38",
     "nodePackages.dotenv-cli@latest",
     "opentofu@1.9.0",
     "pre-commit@2.20.0",
