@@ -5,7 +5,7 @@
     "actionlint@latest",
     "awscli2@latest",
     "direnv@latest",
-    "gitleaks@8.18.4",
+    "gitleaks@8.23.3",
     "go-task@3.41.0",
     "infracost@latest",
     "nodePackages.dotenv-cli@latest",
