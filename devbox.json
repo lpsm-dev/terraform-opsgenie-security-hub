@@ -12,7 +12,7 @@
     "opentofu@latest",
     "pre-commit@2.20.0",
     "terraform@latest",
-    "terraform-docs@latest",
+    "terraform-docs@0.19.0",
     "tflint@0.55.1",
     "yamllint@latest"
   ],
