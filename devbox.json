@@ -3,7 +3,7 @@
   "packages": [
     "act@0.2.74",
     "actionlint@latest",
-    "awscli2@latest",
+    "awscli2@2.23.11",
     "direnv@latest",
     "gitleaks@8.18.4",
     "go-task@3.41.0",
