@@ -8,7 +8,7 @@
     "gitleaks@8.23.3",
     "go-task@3.41.0",
     "infracost@0.10.38",
-    "nodePackages.dotenv-cli@latest",
+    "nodePackages.dotenv-cli@7.4.2",
     "opentofu@1.9.0",
     "pre-commit@2.20.0",
     "terraform@0.12.31",
