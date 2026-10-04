@@ -305,51 +305,41 @@
         }
       }
     },
-    "infracost@0.10.38": {
-      "last_modified": "2025-05-16T20:19:48Z",
-      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#infracost",
+    "infracost@0.10.45": {
+      "last_modified": "2026-10-02T22:55:44Z",
+      "resolved": "github:NixOS/nixpkgs/55ba7f49ef2962b42cbd126522b7df5f95037679#infracost",
       "source": "devbox-search",
-      "version": "0.10.38",
+      "version": "0.10.45",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g3gjyiqrpxsyz2lbnff5qn6zc8vjqcv5-infracost-0.10.38",
+              "path": "/nix/store/pxrvbpi2mj9fs1jr6wr4p0gcl4990wk8-infracost-0.10.45",
               "default": true
             }
           ],
-          "store_path": "/nix/store/g3gjyiqrpxsyz2lbnff5qn6zc8vjqcv5-infracost-0.10.38"
+          "store_path": "/nix/store/pxrvbpi2mj9fs1jr6wr4p0gcl4990wk8-infracost-0.10.45"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/iky1xdfnl7h5y10ll3p37kbjw7d6h0z5-infracost-0.10.38",
+              "path": "/nix/store/dqlrqr67f8ywr8gyxnqkzw0b8z01gjdw-infracost-0.10.45",
               "default": true
             }
           ],
-          "store_path": "/nix/store/iky1xdfnl7h5y10ll3p37kbjw7d6h0z5-infracost-0.10.38"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/6615n72zhzik1vrh5waffa94q8cc9i83-infracost-0.10.38",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/6615n72zhzik1vrh5waffa94q8cc9i83-infracost-0.10.38"
+          "store_path": "/nix/store/dqlrqr67f8ywr8gyxnqkzw0b8z01gjdw-infracost-0.10.45"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dcsrpn8zl72vah0mqx4i4nd7rk3a5dhc-infracost-0.10.38",
+              "path": "/nix/store/9sprbdqxllb90fszic4avryfv5p74ipg-infracost-0.10.45",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dcsrpn8zl72vah0mqx4i4nd7rk3a5dhc-infracost-0.10.38"
+          "store_path": "/nix/store/9sprbdqxllb90fszic4avryfv5p74ipg-infracost-0.10.45"
         }
       }
     },
